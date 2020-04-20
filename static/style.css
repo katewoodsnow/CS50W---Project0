@@ -1,0 +1,151 @@
+h1 {
+    color: blue;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 300%;
+    text-align: center;
+  }
+ 
+  h2 {
+    color: blue;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 200%;
+    text-align: center;
+  }
+ 
+#personal {
+    border-radius: 50%;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+    width: 250px;
+    margin: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+#personal:hover {
+    box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+  }
+
+#snowboard {
+    width: 500px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#gymnastics{
+    width: 500px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+#badminton {
+    width: 500px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+  
+  .topnav {
+    overflow: hidden;
+    background-color: #333;
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+
+  .topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 110px;
+    text-decoration: none;
+    font-size: 19px;
+  }
+
+  .topnav a:hover {
+    background-color: #ddd;
+    color: blue;
+  }
+  
+  .topnav a.active {
+    background-color: blue;
+    color: white;
+  }
+
+  .main{
+    margin-top: 100px;
+  }
+
+  /*hide navbar link on larger screens */
+  .topnav .icon {
+    display: none;
+  }
+
+  /* when the screen is less than 600px wide display the first only link and the menue bar */
+  @media screen and (max-width: 600px) {
+    .topnav a:not(:first-child) {display: none;}
+    .topnav a.icon {
+      float: right;
+      display: block;
+    }
+  }
+
+  /* when the screen is less than 600px wide the top nav displays vertically instead of horizontally */
+  @media screen and (max-width: 600px) {
+    .topnav.responsive {position: relative;}
+    .topnav.responsive a.icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+
+    .topnav.responsive a {
+      float: none;
+      display: block;
+      width: 5%;
+      text-align: left;
+    }
+}
+
+/* The sidebar menu */
+.sidenav {
+    
+    width: 160px; /* Set the width of the sidebar */
+    position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+    top: 0; /* Stay at the top */
+    left: 0;
+    background-color: whitesmoke;
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 20px;
+    margin-top: 100px;
+  }
+
+  .sidenav a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 20px;
+    color: black;
+    display: block;
+  }
+
+  .sidenav a:hover {
+    color: blue;
+  }
+
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }
+
+  p{
+      font-weight: bold;
+      font-size:x-large;
+      text-align: center;
+  }
+  

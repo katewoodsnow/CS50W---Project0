@@ -13,59 +13,53 @@
         
         <link href="static/style.css" rel="stylesheet">
         
-        <title>My Webpage</title>
-       
+        <title>CV</title>
     </head>
     <body>
         <!-- navbar-->
         <!--navbar becomes vertical on screens-->
-        <div class="container-fluid cv">
-        <nav class="navbar navbar-expand-sm navbar-default bg-transparent">
-            <!--navbar brand-->
-            <a class="navbar-brand ml-2" href="index.html">KW</a>
-        <!-- Toggler/collapsibe Button -->
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+        <div class="container-fluid cvHeader">
+            <nav class="navbar navbar-expand-sm navbar-default bg-transparent">
+                <!--navbar brand-->
+                <a class="navbar-brand ml-2" href="index.html">KW</a>
+                <!-- Toggler/collapsibe Button -->
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar"><span class="navbar-toggler-icon"></span></button>
         
         <!--navbar links -->
-            <div class="collapse navbar-collapse" id="navbar">
-                <ul class="navbar-nav mx-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="portfolio.html">Portfolio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="about.html">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="cv.html">CV</a>
-                    </li>
-                </ul>
-                <ul class="navbar-nav mr-5">
-                    <li class="nav-item">
-                        <a class="nav-link" href="contact.html">Contact</a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
-        <div class="row">
-            <div class="col-md-12 align-self-center pt-3">
-                <h1>My Skills and Experiences</h1>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-12 align-self-center">
-                <a href="static/cv.pdf" class="btn btn-primary btn-lg">Download cv</a>
-            </div>
-        </div>
-        </div>
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-md-12 align-self-center life pt-5">
-                    <h1> Languages and Technologies</h1>
+                <div class="collapse navbar-collapse" id="navbar">
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="portfolio.html">Portfolio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="cv.html">CV</a>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav mr-5">
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="row py-5">
+                <div class="col-md-12 text-center">
+                    <h1 class="pb-5">My Skills and Experiences</h1>
+                    <a href="static/cv.pdf" class="btn btn-primary btn-lg">Download cv</a>
                 </div>
             </div>
-            <div class="row">
+        </div>
+        
+        <div class="container-fluid">
+            <div class="row py-5">
+                <div class="col-md-12 text-center">
+                    <h3>Languages and Technologies</h3>
+                </div>
+            </div>
+            <div class="row py-5 text-center">
                 <div class="col-md-6 col-sm-12">
                     <ul class= "techList">
                         <li>Python</li>
@@ -91,16 +85,12 @@
         </div>
              <!-- Footer -->
         
-        <footer class="page-footer font-small pt-5">
-
-            <!-- Footer Links -->
-            <div class="container-fluid text-center text-md-left">
-  
-            <!-- Grid row -->
-                <div class="row">
-  
-                    <!-- Grid column -->
-                    <div class="col-md-12 mt-md-0 mt-3 footer">
+        <footer class="page-footer font-small">
+            <div class="container-fluid text-center">
+                 <!-- Grid row -->
+                <div class="row py-5">
+                <!-- Grid column -->
+                    <div class="col-md-12 footer" id = "whiteText">
                         <!-- Content -->
                         <h5>Contact</h5>
                         <p>Barton under Needwood, Burton-on-Trent, Staffordshire. DE13 8LH</p>
@@ -130,7 +120,11 @@
                 </div>
             </div>
         </footer>
- 
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    </body>
+</html>
 
 
 

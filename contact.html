@@ -13,76 +13,179 @@
         
         <link href="static/style.css" rel="stylesheet">
         
-        <title>My Webpage</title>
+        <title>Contact</title>
        
     </head>
     <body>
         <!-- navbar-->
         <!--navbar becomes vertical on screens-->
-        <div class="container-fluid contact">
-        <nav class="navbar navbar-expand-sm navbar-default bg-transparent">
-            <!--navbar brand-->
-            <a class="navbar-brand ml-2" href="index.html">KW</a>
-        <!-- Toggler/collapsibe Button -->
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+        <div class="container-fluid contactHeader">
+            <nav class="navbar navbar-expand-sm navbar-default bg-transparent">
+                <!--navbar brand-->
+                <a class="navbar-brand ml-2" href="index.html">KW</a>
+                <!-- Toggler/collapsibe Button -->
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar"><span class="navbar-toggler-icon"></span></button>
         
-        <!--navbar links -->
-            <div class="collapse navbar-collapse" id="navbar">
-                <ul class="navbar-nav mx-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="portfolio.html">Portfolio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="about.html">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="cv.html">CV</a>
-                    </li>
-                </ul>
-                <ul class="navbar-nav mr-5">
-                    <li class="nav-item">
-                        <a class="nav-link" href="contact.html">Contact</a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
+                <!--navbar links -->
+                <div class="collapse navbar-collapse" id="navbar">
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="portfolio.html">Portfolio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="cv.html">CV</a>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav mr-5">
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
        
         <!-- main content-->
 
-        
-            <div class="row">
-                <div class="col-md-6 col-sm-12 pr-5">
+            <div class="row justify-content-start">
+                <div class="col-md-6 col-sm-12 pr-5 text-center">
                     <h1>Connect with me</h1>
                 </div>
-                <div class="col-md-6 col-sm-12"></div>
             </div>
         </div>
-        <div class="row">
-  
+        
+        
+        <div class="container-fluid">
+            <div class="row py-5">
             <!-- Grid column -->
-            <div class="col-md-12">
-                <!-- Content -->
-                <h5>Contact</h5>
-                <p><strong>Address: </strong>Barton under Needwood, Burton-on-Trent, Staffordshire. DE13 8LH</p>
-                <p><strong>Email: </strong><a href="mailto: kate.wood@hotmail.co.uk">kate.wood@hotmail.co.uk</a></P>
-                <p><strong>Tel: </strong><a href="tel:123-456-7890">07497111813</a></p>
+                <div class="col-md-12 text-center">
+                    <!-- Content -->
+                    <h5>Contact</h5>
+                    <p><strong>Address: </strong>Barton under Needwood, Burton-on-Trent, Staffordshire. DE13 8LH</p>
+                    <p><strong>Email: </strong><a href="mailto: kate.wood@hotmail.co.uk">kate.wood@hotmail.co.uk</a></P>
+                    <p><strong>Tel: </strong><a href="tel:123-456-7890">07497111813</a></p>
+                </div>
+            </div>
+
+            <div class="row py-5">
+                <div class="col-md-12">
+                    <h4 class="text-center pb-3">Contact form</h4>
+                </div>
+            </div>
+            
+            <form class="needs-validation pb-5" novalidate>
+                <div class="form-row justify-content-md-center">
+                    <div class="col-md-3 mb-4">
+                        <input type="text" class="form-control" id="validationTooltip01" placeholder="First name" required>
+                        <div class="valid-tooltip">
+                        Looks good!
+                        </div>
+                    </div>
+                    <div class="col-md-3 mb-4">
+                        <input type="text" class="form-control" id="validationTooltip02" placeholder="Last name" required>
+                        <div class="valid-tooltip">
+                        Looks good!
+                        </div>
+                    </div>
+                </div>
+                <div class="form-row justify-content-md-center">
+                    <div class="col-md-6 mb-4">
+                        <input type="text" class="form-control" id="validationTooltip03" placeholder="City" required>
+                        <div class="invalid-tooltip">
+                        Please provide a valid city.
+                        </div>
+                    </div>
+                </div>
+                <div class="form-row justify-content-md-center">
+                    <div class="col-md-3 mb-4">
+                        <select class="custom-select form-control" id="validationTooltip04" placeholder="County" required>
+                            <option selected>County</option>
+                            <option value="1">Bedfordshire</option>
+                            <option value="2">Berkshire</option>
+                            <option value="3">Bristol</option>
+                            <option value="3">Buckinghamshire</option>
+                            <option value="3">Cambridgeshire</option>
+                            <option value="3">Cheshire</option>
+                            <option value="3">City of London</option>
+                            <option value="3">Cornwall</option>
+                            <option value="3">Cumbria</option>
+                            <option value="3">Derbyshire</option>
+                            <option value="3">Dorset</option>
+                            <option value="3">County Durham</option>
+                            <option value="3">East Riding of Yorkshire</option>
+                            <option value="3">East Sussex</option>
+                            <option value="3">Essex</option>
+                            <option value="3">Gloucestershire</option>
+                            <option value="3">Greater London</option>
+                            <option value="3">Greater Manchester</option>
+                            <option value="3">Hampshire</option>
+                            <option value="3">Herefordshire</option>
+                            <option value="3">Hertfordshire</option>
+                            <option value="3">Isle of Wight</option>
+                            <option value="3">Kent</option>
+                            <option value="3">Lancashire</option>
+                            <option value="3">Leicestershire</option>
+                            <option value="3">Lincolnshire</option>
+                            <option value="3">Merseyside</option>
+                            <option value="3">Norfolk</option>
+                            <option value="3">North Yorkshire</option>
+                            <option value="3">Northamptonshire</option>
+                            <option value="3">Northumberland</option>
+                            <option value="3">Nottinghamshire</option>
+                            <option value="3">Oxfordshire</option>
+                            <option value="3">Rutland</option>
+                            <option value="3">Shropshire</option>
+                            <option value="3">Somerset</option>
+                            <option value="3">South Yorkshire</option>
+                            <option value="3">Staffordshire</option>
+                            <option value="3">Suffolk</option>
+                            <option value="3">Surrey</option>
+                            <option value="3">Tyne and Wear</option>
+                            <option value="3">Warwickshire</option>
+                            <option value="3">West Midlands</option>
+                            <option value="3">West Sussex</option>
+                            <option value="3">West Yorkshire</option>
+                            <option value="3">Wiltshire</option>
+                            <option value="3">Worcestershire</option>
+                          </select>
+                        <div class="invalid-tooltip">
+                        Please provide a valid state.
+                        </div>
+                    </div>
+                    <div class="col-md-3 mb-4">
+                        <input type="text" class="form-control" id="validationTooltip05" placeholder="Postcode" required>
+                        <div class="invalid-tooltip">
+                        Please provide a valid zip.
+                        </div>
+                    </div>
+                </div>
+                <div class="form-row justify-content-md-center">
+                    <div class="col-md-6 mb-4">
+                        <input type="email" class="form-control" id="validationTooltip06" placeholder="Email" required>
+                        <div class="invalid-tooltip">
+                        Please provide a valid email.
+                        </div>
+                    </div>
+                </div>
+                <div class="form-row justify-content-md-center py-5">
+                    <button class="btn-sm btn-primary" type="submit">Connect With Me</button>
+                </div>
+            </form>
         </div>
-    </div>
         
         <!-- Footer -->
-        
-        <footer class="page-footer font-small pt-5">
+        <footer class="page-footer font-small">
 
             <!-- Footer Links -->
-            <div class="container-fluid text-center text-md-left">
+            <div class="container-fluid text-center">
   
             <!-- Grid row -->
-                <div class="row">
+                <div class="row py-5">
   
                     <!-- Grid column -->
-                    <div class="col-md-12 mt-md-0 mt-3 footer">
+                    <div class="col-md-12 footer" id = "whiteText">
                         <!-- Content -->
                         <h5>Contact</h5>
                         <p>Barton under Needwood, Burton-on-Trent, Staffordshire. DE13 8LH</p>

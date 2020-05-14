@@ -1,175 +1,181 @@
-  /* when the screen is less than 600px wide display the first only link and the menu bar */
-  @media screen and (max-width: 600px) {
-    .topnav a:not(:first-child) {display: none;}
-    .topnav a.icon {
-      float: right;
-      display: block;
-      color: black;
-    }
-    /*changes content of h2 header in about page depending on the screen size*/
-    #bioAboutHeader::before{
-      content: "Passion for technology"
-    }
+/* when the screen is less than 600px wide display the first only link and the menu bar */
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {
+    display: none;
   }
-
-  @media screen and (min-width: 601px){
-    #bioAboutHeader::before{
-      content: "Full time mother of three children. Passion for Technology. Pursing a career in Software Development"
-    }
-  }
-
-  /* when the screen is less than 600px wide the top nav displays vertically instead of horizontally */
-  @media screen and (max-width: 600px) {
-    .topnav.responsive {position: relative;}
-    .topnav.responsive a.icon {
-      position: absolute;
-      right: 0;
-      top: 0;
-    }
-
-    .topnav.responsive a {
-      float: none;
-      display: block;
-      width: 5%;
-      text-align: left;
-    }
-  }
-
-  .navbar-brand{
-    font-size: 25px;
-    color: white;
-  }
-
-  .navbar-brand:hover{
-    font-size: 25px;
-    color: rgb(0, 112, 0);
-  }
- 
-  a{
-    color: white
-  }
-
-  a:hover{
-    color: rgb(0, 112, 0);
-  }
-
-  h1{
-    color: white;
-    font-family: var(--font-main);
-    font-size: 300%;
-    padding-top: 25px;
-  }
- 
-  h2{
-    color: white;
-    font-family: var(--font-main);
-    font-size: 200%;
-    padding-top: 15px;
-    padding-bottom: 25px;
-  }
-
-  #whiteTextTitle{
-    color:white;
-  }
-
-  .whiteText{
-    color: white;
-  }
-
-  .btn-primary, .btn-blackText{
-    color: white;
-    background-color: transparent;
-    border-color:  rgb(0, 112, 0);
-    font-size: 24px;
-    margin-top: 25px;
-  }
-
-  .btn-primary:hover, .btn-blackText:hover, .btn-sm:hover {
-    background-color: transparent;
-    color:  rgb(0, 112, 0);
-    border-color:  rgb(0, 112, 0);
-  }
-
-  .btn-blackText, .btn-sm{
+  .topnav a.icon {
+    float: right;
+    display: block;
     color: black;
   }
+  /*changes content of h2 header in about page depending on the screen size*/
+  #bioAboutHeader::before {
+    content: "Passion for technology";
+  }
+}
 
-  .btn-sm{
-    font-size: 15px;
+@media screen and (min-width: 601px) {
+  #bioAboutHeader::before {
+    content: "Full time mother of three children. Passion for Technology. Pursing a career in Software Development";
   }
+}
 
-  .footer-copyright a, p a{
-    color:  rgb(0, 112, 0);
+/* when the screen is less than 600px wide the top nav displays vertically instead of horizontally */
+@media screen and (max-width: 600px) {
+  .topnav.responsive {
+    position: relative;
   }
+  .topnav.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    width: 5%;
+    text-align: left;
+  }
+}
 
-  p a::before{
-    content: "\21d2";
-  }
+.navbar-brand {
+  font-size: 25px;
+  color: white;
+}
 
-  .page-footer{
-    background-color: black;
-  }
+.navbar-brand:hover {
+  font-size: 25px;
+  color: #007000;
+}
 
-  .aboutContainer {
-    background-image: url("snowboard.jpg");
-    height: 500px;
-    background-size: cover;
-  }
- 
-  .techList{
-    line-height:240%;
-  }
+a {
+  color: white;
+}
 
-  .greyContainer{
-    background-color: rgb(231, 231, 231);
-  }
+a:hover {
+  color: #007000;
+}
 
-  .homepageHeader{
-    background-image: url("personal_picture1.jpg");
-    height: 450px;
-    background-size: contain; 
-  }
+h1 {
+  color: white;
+  font-family: var(--font-main);
+  font-size: 300%;
+  padding-top: 25px;
+}
 
-  .portfolioHeader{
-    background-image: url("portfolio2.jpg");
-    background-size: cover;
-    background-position: center;
-    height: 570px; 
-  }
+h2 {
+  color: white;
+  font-family: var(--font-main);
+  font-size: 200%;
+  padding-top: 15px;
+  padding-bottom: 25px;
+}
 
-  .aboutHeader {
-    background-image: url("baby1.jpg");
-    background-size: contain;
-    height: 520px;
-    background-position: center;
-  }
+#whiteTextTitle {
+  color: white;
+}
 
-  .cvHeader{
-    background-image: url("katecomp.jpg");
-    background-size: contain;
-  }
+.whiteText {
+  color: white;
+}
 
-  .contactHeader{
-    background-image: url("laptop2.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 520px;
-    background-position: center;
-  }
+.btn-primary, .btn-blackText {
+  color: white;
+  background-color: transparent;
+  border-color: #007000;
+  font-size: 24px;
+  margin-top: 25px;
+}
 
-  .table-bordered tbody tr td{
-    text-align:left;
-    border-color: rgb(0, 112, 0);
-  }
+.btn-primary:hover, .btn-blackText:hover, .btn-sm:hover {
+  background-color: transparent;
+  color: #007000;
+  border-color: #007000;
+}
 
-  .baby img{
-    width:80%; height:80%; 
-  }
+.btn-blackText, .btn-sm {
+  color: black;
+}
 
-  .photo img{
-    width: 50%; height: 50%;
-  }
+.btn-sm {
+  font-size: 15px;
+}
 
-  .laptop img{
-    width:50%; height: 5%;
-  }
+.footer-copyright a, p a {
+  color: #007000;
+}
+
+p a::before {
+  content: "\21d2";
+}
+
+.page-footer {
+  background-color: black;
+}
+
+.aboutContainer {
+  background-image: url("snowboard.jpg");
+  height: 500px;
+  background-size: cover;
+}
+
+.techList {
+  line-height: 240%;
+}
+
+.greyContainer {
+  background-color: #e7e7e7;
+}
+
+.homepageHeader {
+  background-image: url("personal_picture1.jpg");
+  height: 450px;
+  background-size: contain;
+}
+
+.portfolioHeader {
+  background-image: url("portfolio2.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 570px;
+}
+
+.aboutHeader {
+  background-image: url("baby1.jpg");
+  background-size: contain;
+  height: 520px;
+  background-position: center;
+}
+
+.cvHeader {
+  background-image: url("katecomp.jpg");
+  background-size: contain;
+}
+
+.contactHeader {
+  background-image: url("laptop2.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 520px;
+  background-position: center;
+}
+
+.table-bordered tbody tr td {
+  text-align: left;
+  border-color: #007000;
+}
+
+.baby img {
+  width: 80%;
+  height: 80%;
+}
+
+.photo img {
+  width: 50%;
+  height: 50%;
+}
+
+.laptop img {
+  width: 50%;
+  height: 5%;
+}

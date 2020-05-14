@@ -6,6 +6,16 @@
       display: block;
       color: black;
     }
+    /*changes content of h2 header in about page depending on the screen size*/
+    #bioAboutHeader::before{
+      content: "Passion for technology"
+    }
+  }
+
+  @media screen and (min-width: 601px){
+    #bioAboutHeader::before{
+      content: "Full time mother of three children. Passion for Technology. Pursing a career in Software Development"
+    }
   }
 
   /* when the screen is less than 600px wide the top nav displays vertically instead of horizontally */
@@ -25,87 +35,94 @@
     }
   }
 
-.navbar-brand{
-  font-size: 25px;
-  color: white;
-}
+  .navbar-brand{
+    font-size: 25px;
+    color: white;
+  }
 
-.navbar-brand:hover{
-  font-size: 25px;
-  color: rgb(0, 112, 0);
-}
+  .navbar-brand:hover{
+    font-size: 25px;
+    color: rgb(0, 112, 0);
+  }
  
-a{
-  color: white
-}
+  a{
+    color: white
+  }
 
-a:hover{
-  color: rgb(0, 112, 0);
-}
+  a:hover{
+    color: rgb(0, 112, 0);
+  }
 
-h1{
-  color: white;
-  font-family: var(--font-main);
-  font-size: 300%;
-  padding-top: 25px;
-
-}
+  h1{
+    color: white;
+    font-family: var(--font-main);
+    font-size: 300%;
+    padding-top: 25px;
+  }
  
-h2{
-  color: white;
-  font-family: var(--font-main);
-  font-size: 200%;
-  padding-top: 15px;
-  padding-bottom: 25px;
-}
+  h2{
+    color: white;
+    font-family: var(--font-main);
+    font-size: 200%;
+    padding-top: 15px;
+    padding-bottom: 25px;
+  }
 
-#whiteText{
-  color:white;
-}
+  #whiteTextTitle{
+    color:white;
+  }
 
-.btn-primary, .btn-blackText{
-  color: white;
-  background-color: transparent;
-  border-color:  rgb(0, 112, 0);
-  font-size: 24px;
-  margin-top: 25px;
-}
+  .whiteText{
+    color: white;
+  }
 
-.btn-primary:hover, .btn-blackText:hover, .btn-sm:hover {
-  background-color: transparent;
-  color:  rgb(0, 112, 0);
-  border-color:  rgb(0, 112, 0);
-}
+  .btn-primary, .btn-blackText{
+    color: white;
+    background-color: transparent;
+    border-color:  rgb(0, 112, 0);
+    font-size: 24px;
+    margin-top: 25px;
+  }
 
-.btn-blackText, .btn-sm{
-  color: black;
-}
-
-.btn-sm{
-  font-size: 15px;
-}
-
-  .footer-copyright > a, p > a{
+  .btn-primary:hover, .btn-blackText:hover, .btn-sm:hover {
+    background-color: transparent;
     color:  rgb(0, 112, 0);
+    border-color:  rgb(0, 112, 0);
+  }
+
+  .btn-blackText, .btn-sm{
+    color: black;
+  }
+
+  .btn-sm{
+    font-size: 15px;
+  }
+
+  .footer-copyright a, p a{
+    color:  rgb(0, 112, 0);
+  }
+
+  p a::before{
+    content: "\21d2";
   }
 
   .page-footer{
     background-color: black;
   }
 
- .aboutContainer {
-   background-image: url("snowboard.jpg");
-   height: 500px;
-   background-size: cover;
- }
+  .aboutContainer {
+    background-image: url("snowboard.jpg");
+    height: 500px;
+    background-size: cover;
+  }
  
- .techList{
-  line-height:240%;
- }
+  .techList{
+    line-height:240%;
+  }
 
- .greyContainer{
-   background-color: rgb(231, 231, 231);
- }
+  .greyContainer{
+    background-color: rgb(231, 231, 231);
+  }
 
   .homepageHeader{
     background-image: url("personal_picture1.jpg");
@@ -140,23 +157,19 @@ h2{
     background-position: center;
   }
 
-  .table-bordered >tbody >tr>td{
+  .table-bordered tbody tr td{
     text-align:left;
     border-color: rgb(0, 112, 0);
-    }
+  }
 
-    .baby >img{
-      width:80%; height:80%; 
-    }
+  .baby img{
+    width:80%; height:80%; 
+  }
 
-    .photo > img{
-      width: 50%; height: 50%;
-    }
+  .photo img{
+    width: 50%; height: 50%;
+  }
 
-    .laptop > img{
-      width:50%; height: 5%;
-    }
-
-    #carouselExampleControls{
-      width:200px; height:200px;
-    }
+  .laptop img{
+    width:50%; height: 5%;
+  }

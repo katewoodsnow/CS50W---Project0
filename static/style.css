@@ -38,21 +38,19 @@
   }
 }
 
-.navbar-brand {
+nav .navbar-brand {
   font-size: 25px;
+}
+
+nav a {
   color: white;
 }
 
-.navbar-brand:hover {
-  font-size: 25px;
+nav a:hover {
   color: #007000;
 }
 
 a {
-  color: white;
-}
-
-a:hover {
   color: #007000;
 }
 
@@ -61,6 +59,7 @@ h1 {
   font-family: var(--font-main);
   font-size: 300%;
   padding-top: 25px;
+  text-align: center;
 }
 
 h2 {
@@ -69,48 +68,74 @@ h2 {
   font-size: 200%;
   padding-top: 15px;
   padding-bottom: 25px;
+  text-align: center;
+}
+
+h3 {
+  color: black;
+  font-family: var(--font-main);
+  font-size: 180%;
+  padding-top: 80px;
+  padding-bottom: 55px;
+  text-align: center;
 }
 
 #whiteTextTitle {
   color: white;
 }
 
+p {
+  font-family: var(--font-main);
+  text-align: center;
+}
+
+p .a {
+  color: #007000;
+}
+
+p ::before {
+  content: "\21d2";
+}
+
 .whiteText {
   color: white;
 }
 
-.btn-primary, .btn-blackText {
-  color: white;
+.btn-primary, .btn-blackText, .btn-primary:hover, .btn-blackText:hover, .btn-sm:hover {
   background-color: transparent;
   border-color: #007000;
   font-size: 24px;
   margin-top: 25px;
 }
 
-.btn-primary:hover, .btn-blackText:hover, .btn-sm:hover {
-  background-color: transparent;
-  color: #007000;
-  border-color: #007000;
+.btn-primary {
+  color: white;
 }
 
-.btn-blackText, .btn-sm {
+.btn-blackText {
   color: black;
 }
 
 .btn-sm {
   font-size: 15px;
+  color: black;
 }
 
-.footer-copyright a, p a {
+.btn-primary:hover, .btn-blackText:hover, .btn-sm:hover {
   color: #007000;
 }
 
-p a::before {
-  content: "\21d2";
+.btn-sm:hover {
+  font-size: 15px;
 }
 
 .page-footer {
   background-color: black;
+  color: white;
+}
+
+.page-footer li > a {
+  color: white;
 }
 
 .aboutContainer {
@@ -179,3 +204,4 @@ p a::before {
   width: 50%;
   height: 5%;
 }
+/*# sourceMappingURL=style.css.map */

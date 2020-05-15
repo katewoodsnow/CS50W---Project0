@@ -1,0 +1,212 @@
+/* when the screen is less than 600px wide display the first only link and the menu bar */
+@media screen and (max-width: 600px) {
+    .topnav a:not(:first-child) {
+      display: none;
+    }
+    .topnav a.icon {
+      float: right;
+      display: block;
+      color: black;
+    }
+    /*changes content of h2 header in about page depending on the screen size*/
+    #bioAboutHeader::before {
+      content: "Passion for technology";
+    }
+  }
+  
+  @media screen and (min-width: 601px) {
+    #bioAboutHeader::before {
+      content: "Full time mother of three children. Passion for Technology. Pursing a career in Software Development";
+    }
+  }
+  
+  /* when the screen is less than 600px wide the top nav displays vertically instead of horizontally */
+  @media screen and (max-width: 600px) {
+    .topnav.responsive {
+      position: relative;
+    }
+    .topnav.responsive a.icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .topnav.responsive a {
+      float: none;
+      display: block;
+      width: 5%;
+      text-align: left;
+    }
+  }
+  
+$mainColour: white;
+$secondaryColour: #007000;
+$bannerBg-Size: contain;
+$bannerBg-size2: cover;
+$bgBtnColour: transparent;
+
+nav{
+  .navbar-brand{
+    font-size: 25px;
+  }
+  a{
+    color: $mainColour;
+  }
+  a:hover {
+    color: $secondaryColour;
+  }
+}
+  
+a {
+  color: $secondaryColour;
+}
+  
+h1 {
+  color: $mainColour;
+  font-family: var(--font-main);
+  font-size: 300%;
+  padding-top: 25px;
+  text-align: center;
+}
+  
+h2 {
+  color: $mainColour;
+  font-family: var(--font-main);
+  font-size: 200%;
+  padding-top: 15px;
+  padding-bottom: 25px;
+  text-align: center;
+}
+  
+h3 {
+  color: black;
+  font-family: var(--font-main);
+  font-size: 180%;
+  padding-top: 80px;
+  padding-bottom: 55px;
+  text-align: center;
+}
+    
+#whiteTextTitle {
+  color: $mainColour;
+}
+
+p {
+  font-family: var(--font-main);
+  text-align: center;
+  .a{
+    color: $secondaryColour;
+  }
+  ::before {
+    content: "\21d2";
+  }
+}
+
+.whiteText {
+  color: $mainColour;
+}
+
+%myButton{
+  background-color: $bgBtnColour;
+  border-color: $secondaryColour;
+  font-size: 24px;
+  margin-top: 25px;
+}
+
+.btn-primary{
+  @extend %myButton;
+  color: $mainColour
+}
+
+.btn-blackText{
+  @extend %myButton;
+  color: black;
+}
+
+.btn-sm {
+  font-size: 15px;
+  color: black
+}
+  
+.btn-primary:hover, .btn-blackText:hover, .btn-sm:hover {
+  @extend %myButton;
+  color: $secondaryColour;
+}
+
+.btn-sm:hover{
+  font-size: 15px;
+}
+  
+.page-footer {
+  background-color: black;
+  color: $mainColour;
+  li>a{
+    color: $mainColour;
+  }
+}
+  
+.aboutContainer {
+  background-image: url("snowboard.jpg");
+  height: 500px;
+  background-size: $bannerBg-size2;
+}
+  
+.techList {
+  line-height: 240%;
+}
+  
+.greyContainer {
+  background-color: #e7e7e7;
+}
+  
+.homepageHeader {
+  background-image: url("personal_picture1.jpg");
+  height: 450px;
+  background-size: $bannerBg-Size;
+}
+  
+.portfolioHeader {
+  background-image: url("portfolio2.jpg");
+  background-size: $bannerBg-size2;
+  background-position: center;
+  height: 570px;
+}
+  
+.aboutHeader {
+  background-image: url("baby1.jpg");
+  background-size: $bannerBg-Size;
+  height: 520px;
+  background-position: center;
+}
+  
+.cvHeader {
+  background-image: url("katecomp.jpg");
+  background-size: $bannerBg-Size;
+}
+  
+.contactHeader {
+  background-image: url("laptop2.jpg");
+  background-size: $bannerBg-size2;
+  background-repeat: no-repeat;
+  height: 520px;
+  background-position: center;
+}
+  
+.table-bordered tbody tr td {
+  text-align: left;
+  border-color: $secondaryColour
+}
+  
+.baby img {
+  width: 80%;
+  height: 80%;
+}
+  
+.photo img {
+  width: 50%;
+  height: 50%;
+}
+  
+.laptop img {
+  width: 50%;
+  height: 5%;
+}

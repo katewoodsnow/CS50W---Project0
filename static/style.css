@@ -54,6 +54,10 @@ a {
   color: #007000;
 }
 
+a:hover {
+  color: #007000;
+}
+
 h1 {
   color: white;
   font-family: var(--font-main);
@@ -65,7 +69,7 @@ h1 {
 h2 {
   color: white;
   font-family: var(--font-main);
-  font-size: 200%;
+  font-size: 180%;
   padding-top: 15px;
   padding-bottom: 25px;
   text-align: center;
@@ -89,10 +93,6 @@ p {
   text-align: center;
 }
 
-p .a {
-  color: #007000;
-}
-
 p ::before {
   content: "\21d2";
 }
@@ -101,14 +101,16 @@ p ::before {
   color: white;
 }
 
-.btn-primary, .btn-blackText, .btn-primary:hover, .btn-blackText:hover, .btn-sm:hover {
+.btn-whiteText, .btn-blackText, .btn-whiteText:hover, .btn-blackText:hover, .btn-sm:hover {
   background-color: transparent;
   border-color: #007000;
   font-size: 24px;
   margin-top: 25px;
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 
-.btn-primary {
+.btn-whiteText {
   color: white;
 }
 
@@ -121,7 +123,7 @@ p ::before {
   color: black;
 }
 
-.btn-primary:hover, .btn-blackText:hover, .btn-sm:hover {
+.btn-whiteText:hover, .btn-blackText:hover, .btn-sm:hover {
   color: #007000;
 }
 

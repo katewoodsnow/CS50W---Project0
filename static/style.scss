@@ -59,6 +59,9 @@ nav{
 a {
   color: $secondaryColour;
 }
+  a:hover{
+    color: $secondaryColour;
+  }
   
 h1 {
   color: $mainColour;
@@ -71,7 +74,7 @@ h1 {
 h2 {
   color: $mainColour;
   font-family: var(--font-main);
-  font-size: 200%;
+  font-size: 180%;
   padding-top: 15px;
   padding-bottom: 25px;
   text-align: center;
@@ -93,9 +96,6 @@ h3 {
 p {
   font-family: var(--font-main);
   text-align: center;
-  .a{
-    color: $secondaryColour;
-  }
   ::before {
     content: "\21d2";
   }
@@ -110,9 +110,10 @@ p {
   border-color: $secondaryColour;
   font-size: 24px;
   margin-top: 25px;
+  box-shadow: none;
 }
 
-.btn-primary{
+.btn-whiteText{
   @extend %myButton;
   color: $mainColour
 }
@@ -127,7 +128,7 @@ p {
   color: black
 }
   
-.btn-primary:hover, .btn-blackText:hover, .btn-sm:hover {
+.btn-whiteText:hover, .btn-blackText:hover, .btn-sm:hover{
   @extend %myButton;
   color: $secondaryColour;
 }
